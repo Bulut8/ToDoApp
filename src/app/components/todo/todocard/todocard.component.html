@@ -1,0 +1,26 @@
+<mat-card class="example-card">
+   
+    <mat-card-content>
+      <a routerLink="/todo/list" routerLinkActive="active"  class="list">     
+        <button class="list" style="margin-right: 10px;" mat-raised-button  color="primary">List</button> 
+      </a>
+
+       <a routerLink="/todo/edit/{{id}}" routerLinkActive="active"  class="edit">     
+        <button class="edit" style="margin-right: 10px;" mat-raised-button  color="basic">Edit</button>
+      </a>
+        <button  style="margin-right: 10px;" mat-raised-button (click)="Delete(id)"  color="warn">Delete</button>
+    </mat-card-content>
+
+    <mat-card-content >     
+     <p style="font-size: 25px;">
+      Title : <label style="color: blue;">{{title}} </label> 
+      </p>
+      <p style="font-size: 25px;">
+      Completed : <label style="color: blue;">{{completed}} </label> 
+      </p>
+      <p style="font-size: 25px;">
+      UserId : <label style="color: blue;">{{userId}} </label> 
+      </p>
+    </mat-card-content>
+   
+  </mat-card>

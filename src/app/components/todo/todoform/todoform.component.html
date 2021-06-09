@@ -1,0 +1,15 @@
+
+
+<form [formGroup]="todoForm">
+    
+   <label>Title: </label> <input type="text" formControlName="title"> 
+    <br><br>
+   <label>Completed: </label>  <input type="checkbox" formControlName="completed" >
+    <br><br>
+    <button mat-button color="primary" [disabled]="todoForm.invalid" (click)="Send()">Gönder</button>
+    <br><br>
+
+    <!-- <button mat-button color="warn" mat-raised-button type="button" class="Discard-btn" (click)="cancel()">Cancel</button> -->
+
+    
+</form>
